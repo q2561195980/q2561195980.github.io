@@ -1,0 +1,1 @@
+var e=e=>e===`running`?`success`:e===`starting`?`info`:e===`stopping`?`warning`:e===`node_down`?`error`:`neutral`,t={success:`bg-green-500`,info:`bg-sky-500`,warning:`bg-orange-500`,error:`bg-red-500`,neutral:`bg-neutral-500`},n=n=>t[e(n)],r=e=>e===`starting`||e===`stopping`;export{n,r,e as t};
