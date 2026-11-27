@@ -1,1 +1,0 @@
-import{J as e,W as t,h as n}from"./DNY5Jn-w.js";import{r}from"#entry";var i={},a={class:`min-h-screen`};function o(r,i){return t(),n(`div`,a,[e(r.$slots,`default`)])}var s=r(i,[[`render`,o]]);export{s as default};

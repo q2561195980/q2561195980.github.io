@@ -1,1 +1,0 @@
-import{f as e}from"#entry";import{O as t,k as n}from"./DNY5Jn-w.js";function r(r=``){if(!t())throw Error(`vue-query hooks can only be used inside setup() function or functions that support injection context.`);let i=e(r),a=n(i);if(!a)throw Error(`No 'queryClient' found in Vue context, use 'VueQueryPlugin' to properly initialize the library.`);return a}export{r as t};

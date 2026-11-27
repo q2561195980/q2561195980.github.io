@@ -1,1 +1,0 @@
-import{Tt as e,wt as t}from"./DNY5Jn-w.js";var n=e(!1),r=()=>({isBottomBarHidden:t(n),setBottomBarHidden:e=>{n.value=e}});export{r as t};
