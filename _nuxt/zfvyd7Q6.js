@@ -1,0 +1,1 @@
+import{w as e}from"./DNY5Jn-w.js";function t(){let t=e()?.vnode?.scopeId;return t?{[t]:``}:{}}export{t};

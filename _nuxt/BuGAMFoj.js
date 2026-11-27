@@ -1,0 +1,1 @@
+import{Mt as e,d as t}from"./DNY5Jn-w.js";import{i as n}from"./B4AprcRY.js";function r(r){return t(()=>!e(r)||!!n(r)?.closest(`form`))}export{r as t};
