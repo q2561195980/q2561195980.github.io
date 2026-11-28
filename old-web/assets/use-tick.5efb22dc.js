@@ -1,0 +1,1 @@
+import{a5 as i,x as s,A as a,a9 as r,k as c}from"./index.8d44ebaa.js";function k(){let e;const o=c();function t(){e=void 0}return i(t),s(t),{removeTick:t,registerTick(n){e=n,a(()=>{e===n&&(r(o)===!1&&e(),e=void 0)})}}}export{k as u};

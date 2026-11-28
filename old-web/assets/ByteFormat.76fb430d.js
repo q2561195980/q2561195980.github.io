@@ -1,0 +1,1 @@
+function r(t){if(t<1024)return t+"B";if((t/=1024)<1024)return t.toFixed(2)+"KB";if((t/=1024)<1024)return t.toFixed(2)+"MB";if((t/=1024)<1024)return t.toFixed(2)+"GB";if((t/=1024)<1024)return t.toFixed(2)+"TB"}export{r as B};

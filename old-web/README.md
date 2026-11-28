@@ -1,24 +1,24 @@
-# old-web
+# simpfun.cn 静态镜像（V4）
 
-simpfun.cn（简幻欢 • V4）前端静态镜像归档目录。
+- 来源：https://simpfun.cn/
+- 应用：简幻欢 - Simpfun • V4（Quasar / Vue SPA，挂载点 `#q-app`）
+- 抓取时间：2026-11-28（北京时间）
+- 入口：`/assets/index.8d44ebaa.js`、`/assets/index.8a19684e.css`
 
-## 当前状态
-
-镜像尚未完整上传。云端环境无 GitHub 凭据，连接器仅支持文本内联提交、无法无损承载整包（含 5 个 >100K 的核心 JS/CSS 和 10 个二进制字体/图标）。
-
-整包需在已登录 GitHub 的本地环境用 git 推送至本目录，结构应为：
+## 目录结构
 
 ```
-old-web/
-├── index.html
-├── favicon.ico
-├── logo.png
-├── API.md
-└── assets/...
+index.html            # SPA 入口（纯客户端渲染）
+favicon.ico
+logo.png
+assets/               # JS chunk、CSS chunk、字体（woff/woff2）
 ```
 
-## 注意
+## 已知问题
 
-- 入口 HTML 使用根目录绝对路径 `/assets/`、`/logo.png`，放到本子目录后需改为相对路径 `./assets/`、`./logo.png`。
-- 二进制（7 woff/woff2、logo.png、favicon.ico）须经 git 通道补传，勿走文本内联通道（会损坏）。
-- 后端接口指向 `https://api.simpfun.cn`，纯静态托管下登录、控制台、下单等功能不可用。
+- **后端接口不在静态包内**：页面接口、登录、WebSocket 指向 `https://api.simpfun.cn`，离线或纯静态托管下这些功能不可用。
+- **后端静态图片未纳入**：推荐图、展示图、系统/微信等图片位于 `https://api.simpfun.cn/static/images/...`，由后端提供，未随本包下载。
+- **Monaco Editor 部分资源走 CDN**：编辑器依赖 `cdn.jsdelivr.net/npm/monaco-editor` 等外部 CDN，离线环境可能加载不全。
+- **无真实 PWA 资源**：线上 `/manifest.json`、`/sw.js`、`/logo.svg` 路径均被 SPA 兜底返回首页 HTML，不存在真实文件，未纳入本包。
+- **字体已包含**：`assets/` 下的 woff / woff2 字体已随包下载。
+- 本包为前端静态壳镜像，不包含任何后端程序、存档、配置或服务端文件。
